@@ -2139,7 +2139,13 @@ input, select, textarea {
 						}
 
 				}
-
+			
+			#work .row {
+				margin-top: 1em;
+			}
+				#work .row p {
+					margin-top: 1em;
+				}
 /* Footer */
 
 	#footer {
