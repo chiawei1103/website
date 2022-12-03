@@ -36,7 +36,8 @@
 						<a href="index.html" class="icon solid fa-home inactive"><span>Home</span></a>
 						<a href="index.html#work" class="icon solid fa-folder-open active"><span>Works</span></a>
 						<a href="index.html#about" class="icon solid fa-address-card"><span>About</span></a>
-						<a href="index.html#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="index.html#resume" class="icon regular fa-file"><span>Resume</span></a>
+                        <a href="index.html#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -88,8 +89,9 @@
                                                         Garmin Express is for users to update maps and software on the devices. 
                                                         However, the <strong>Garmin Blog is not as popular as other pages</strong>. 
                                                         Hence, in this project, I am trying to do the research, 
-                                                        try to find the problems of the website, and improve the website to reach more people, 
-                                                        being more user-friendly. 
+                                                        try to find the problems of the website on reaching information. A lot of articles are presented on the blog. 
+                                                        Whether users can find the article that they want to read is a critical issue for a blog. For Garmin, the searching function and article organization could be the pain points. 
+        
                                                     </p>
                                                 </section>
                                             </div>
@@ -132,62 +134,152 @@
                                         </header>
                                         <section>
                                             <p>
-                                                While doing the heuristic evaluation on the website, 
-                                                I found that most of the problems on the website are related to visibility of system status, 
-                                                which is about navigation and pagination on the website.
-                                                
+                                                The website, Garmin Blog (<a href="https://www.garmin.com/en-US/blog/">https://www.garmin.com/en-US/blog/</a>), will be evaluated by Jakob Nielsen's 10 principles and scaled by Jeff Sauro’s three levels rating scale.
                                             </p>
                                         </section>
-                                        <section>
-                                            <h3>1. </h3>
-                                            <div class="row" style="margin-top: .1em;">
-                                                <div class="col-7">
-                                                    <ul>
-                                                        <li>Issue: There are several tabs on the top of the page. When entering the page, <strong>users don’t know which tabs they’re reading</strong>. This navigation issue may confuse users about how to find the category they want to know about. </li>
-                                                        <li>Rating: Intermediate</li>
-                                                    </ul>
+                                        <article style="margin-top: 30px;">
+                                            <header>
+                                                <h4>
+                                                    Heuristic Evaluation - Jakob Nielsen's 10 principles
+                                                </h4>
+                                            </header>
+                                            <section>
+                                                <p>
+                                                    Jakob Nielsen's principles are a type of heuristic evaluation for user interface design. They are called “heuristic” since they are broad rules of thumb and not specific usability guidelines(Jacob, 1994). The following list are Jakob Nielsen's principles: 
+                                                </p>
+                                                <ol>
+                                                    <li>Visibility of system status</li>
+                                                    <li>Match between system and the real world</li>
+                                                    <li>User control and freedom</li>
+                                                    <li>Consistency and standard</li>
+                                                </ol>
+                                            </section>
+                                        </article>
+                                        <article style="margin-top: 30px;">
+                                            <header>
+                                                <h4>
+                                                    Rating Scale - Jeff Sauro’s three levels rating scale
+                                                </h4>
+                                            </header>
+                                            <section>
+                                                <p>
+                                                    Both problem frequency and severity are crucial when communicating the importance of usability issues. Rating the severity of the problem is less objective than finding the problem frequency. There are several ways to rate the severity. Jeff Sauro compared some popular rating approach and sorted out the following rating levels(Jeff, 2013): 
+                                                </p>
+                                                <ol>
+                                                    <li><strong>Minor: </strong> Cause some hesitation or slight irritation</li>
+                                                    <li><strong>Moderate: </strong> Causes occasional task failure for some users; causes delays and moderate irritation</li>
+                                                    <li><strong>Critical: </strong> Leads to task failure. Causes users extreme irritation</li>
+                                                </ol>
+                                            </section>
+                                        </article>
+                                        <article style="margin-top: 30px;">
+                                            <header>
+                                                <h4>
+                                                    Design and Navigation Evaluation
+                                                </h4>
+                                            </header>
+                                            <section>
+                                                <h5>1. &nbsp; &nbsp; Visibility of system status - </h5>
+                                                <h5 style="text-align: center; margin-top: .6em;">“The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time.”</h5>
+                                                <div class="row" style="margin-top: .1em;">
+                                                    <div class="col-7">
+                                                        <ul>
+                                                            <li><b>Issue: </b>There are several tabs on the top of the page. When entering the page, <strong>users don’t know which tabs they’re reading</strong>. This navigation issue may confuse users about how to find the category they want to know about.</li>
+                                                            <li><b>Rating: </b>Intermediate</li>
+                                                            <li><b>Suggestion: </b>Applied tags to categorize articles. Users could know which cagtegory of articles they're reading through the tag being different colors. </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a>
+                                                            <img style="width: 100%;" src="images/issue1.png" alt="" />
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-5">
-                                                    <a>
-                                                        <img style="width: 100%;" src="images/issue1.png" alt="" />
-                                                    </a>
+                                                <div class="row" style="margin-top: .1em;">
+                                                    <div class="col-7">
+                                                        <ul>
+                                                            <li><b>Issue: </b>While using the searching bar on the top, <strong>the site doesn’t tell users whether it finished searching or not</strong>. It might take users some more time to see if the site finished searching. And the research results sometimes are not related to the query.</li>
+                                                            <li><b>Rating: </b>Critical</li>
+                                                            <li><b>Suggestion: </b>Present the search result to let users know the status of searching and whether the system finished searching. </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a>
+                                                            <img style="width: 100%;" src="images/issue2.png" alt="" />
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </section>
-                                        <hr class="dotted">
-                                        <section>
-                                            <h3>2. </h3>
-                                            <div class="row">
-                                                <div class="col-7">
-                                                    <ul>
-                                                        <li>Issue: While using the searching bar on the top, <strong>the site doesn’t tell users whether it finished searching or not</strong>. It might take users some more time to see if the site finished searching. And the research results sometimes are not related to the query.</li>
-                                                        <li>Rating: Critical</li>
-                                                    </ul>
+                                                <div class="row" style="margin-top: .1em;">
+                                                    <div class="col-7">
+                                                        <ul>
+                                                            <li><b>Issue: </b>When not finding the article users want, they need to click on “show more” and find the article from all articles, which seems to be endless. Users may have no patience for keeping doing the same thing to find the article. They may just quit. </li>
+                                                            <li><b>Rating: </b>Intermediate</li>
+                                                            <li><b>Suggestion: </b>Using pagination to let users know the amount of search result that system has seached. In this way, it can prevent users keep clicking "Show More" endlessly. </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a>
+                                                            <img style="width: 100%;" src="images/issue3.png" alt="" />
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-5">
-                                                    <a>
-                                                        <img style="width: 100%;" src="images/issue2.png" alt="" />
-                                                    </a>
+                                            </section>
+                                            <section>
+                                                <h5>2. &nbsp; &nbsp; User control and freedom - </h5>
+                                                <h5 style="text-align: center; margin-top: .6em;">“Users often perform actions by mistake. They need a clearly marked "emergency exit" to leave the unwanted action without having to go through an extended process.”</h5>
+                                                <div class="row" style="margin-top: .1em;">
+                                                    <p>
+                                                        This is a simple site, which means there are no complex links to pages. 
+                                                        Each item in the menu links to one page. Users can go forth and back between all articles.  
+                                                        Hence, users will not make mistakes in entering unwanted pages. 
+                                                        They can control whichever page they want to enter or exit on this website. 
+                                                    </p>
                                                 </div>
-                                            </div>
-                                        </section>
-                                        <hr class="dotted">
-                                        <section>
-                                            <h3>3. </h3>
-                                            <div class="row">
-                                                <div class="col-7">
-                                                    <ul>
-                                                        <li>Issue: When not finding the article users want, they need to click on “show more” and find the article from all articles, which seems to be endless. Users may have no patience for keeping doing the same thing to find the article. They may just quit. </li>
-                                                        <li>Rating: Intermediate</li>
-                                                    </ul>
+                                            </section>
+                                            <section>
+                                                <h5>3. &nbsp; &nbsp; Aesthetic and minimalist design - </h5>
+                                                <h5 style="text-align: center; margin-top: .6em;">“Interfaces should not contain information that is irrelevant or rarely needed. Every extra unit of information in an interface competes with the relevant units of information and diminishes their relative visibility. ”</h5>
+                                                <div class="row" style="margin-top: .1em;">
+                                                    <div class="col-7">
+                                                        <ul>
+                                                            <li><b>Issue: </b>The big picture at the very beginning of the site has big proportion of the site, which wastes the display</li>
+                                                            <li><b>Rating: </b>Moderate</li>
+                                                            <li><b>Suggestion: </b>Using sliders to present more than one picture and present some popular article, rather than just pictures, in the sliders. </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a>
+                                                            <img style="width: 100%;" src="images/issue4.png" alt="" />
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-5">
-                                                    <a>
-                                                        <img style="width: 100%;" src="images/issue3.png" alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </section>
+                                            </section>
+                                        </article>
+                                        <article>
+                                            <header>
+                                                <h4>
+                                                    Content Evaluation
+                                                </h4>
+                                            </header>
+                                                <section>
+                                                    <h5>1. &nbsp; &nbsp; Match between system and the real world - </h5>
+                                                    <h5 style="text-align: center; margin-top: .6em;">“The design should speak the users' language. Use words, phrases, and concepts familiar to the user, rather than internal jargon. Follow real-world conventions, making information appear in a natural and logical order. ”</h5>
+                                                    <div class="row" style="margin-top: .1em;">
+                                                        <p>
+                                                            All articles in the blog are full of knowledge. One of the main goal of the blog is to illustrate users something interesting and relating to their life. The blog use proper vocabularies and sentences, which match the real world. 
+                                                        </p>
+                                                    </div>
+                                                </section>
+                                                <section>
+                                                    <h5>2. &nbsp; &nbsp; Consistency and standards - </h5>
+                                                    <h5 style="text-align: center; margin-top: .6em;">“Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions. ”</h5>
+                                                    <div class="row" style="margin-top: .1em;">
+                                                        <p>
+                                                            Garmin, as a big company in the world, has consistency with their company culture. All font, color, buttons, icons are consistent with Garmin's other website. 
+                                                        </p>
+                                                    </div>
+                                                </section>
+                                        </article>
                                     </article>
                                     <hr>
                                     <!--Solutions-->
@@ -298,11 +390,12 @@
 					</div>
 
 				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>Copyright &copy; 2022 by Lawrence</li>
-						</ul>
-					</div>
+                <div id="footer">
+                    <ul class="copyright">
+                        <li>Email: chiawei951103@gmail.com</li>
+                        <li>Copyright &copy; 2022 by Lawrence</li>
+                    </ul>
+                </div>
 
 			</div>
 
@@ -312,32 +405,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-            <script>
-                window.onscroll = function (){scrollControl()};
-
-                //var progressBar = document.getElementById("progressBar");
-                //var sticky = progressBar.offsetTop;
-                //console.log("sticky: "+ sticky);
-
-                function scrollControl() {
-
-                    //shrinkTitle
-                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-                    {
-                        document.getElementById("nav").style.fontSize = ".5em";
-                    }
-                    else{
-                        document.getElementById("nav").style.fontSize = "1em";
-                    }
-
-                    //stickProgressBar
-                    // if (window.pageYOffset > sticky) {
-                    //     progressBar.classList.add("sticky");
-                    // }else {
-                    //     progressBar.classList.remove("sticky");
-                    // }
-                }
-            </script>
+			<script src="assets/js/page.js"></script>
+            
 
 	</body>
 </html>

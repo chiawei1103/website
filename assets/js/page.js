@@ -1,17 +1,24 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {stickyHeader()};
+window.onscroll = function (){scrollControl()};
 
-// Get the header
-var header = document.getElementById("navStep");
+//var progressBar = document.getElementById("progressBar");
+//var sticky = progressBar.offsetTop;
+//console.log("sticky: "+ sticky);
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
+function scrollControl() {
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+    //shrinkTitle
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+    {
+        document.getElementById("nav").style.fontSize = ".5em";
+    }
+    else{
+        document.getElementById("nav").style.fontSize = "1em";
+    }
+
+    //stickProgressBar
+    // if (window.pageYOffset > sticky) {
+    //     progressBar.classList.add("sticky");
+    // }else {
+    //     progressBar.classList.remove("sticky");
+    // }
 }

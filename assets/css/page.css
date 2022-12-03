@@ -1327,7 +1327,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;
+		color: #2f2f2f;
 		font-size: 20pt;
 		line-height: 1.75em;
 	}
@@ -2181,7 +2181,9 @@ input, select, textarea {
 
 	#footer {
 		color: rgba(255, 255, 255, 0.9);
+		background-color: #222222;
 		text-align: center;
+		width: 100%;
 		padding: 2em 0 0 0;
 		font-size: 0.75em;
 	}
