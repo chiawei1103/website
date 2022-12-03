@@ -12,7 +12,20 @@
 		<link rel="stylesheet" href="assets/css/page.css" />
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+        <style>
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: auto;
+            }
+
+            .sticky + .content {
+                padding-top: 100px;
+            }
+
+        </style>
+
+    </head>
 	<body class="is-preload">
 
 		<!-- Wrapper-->
@@ -20,8 +33,8 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="index.html" class="icon solid fa-home"><span>Home</span></a>
-						<a href="index.html#work" class="icon solid fa-folder-open"><span>Works</span></a>
+						<a href="index.html" class="icon solid fa-home inactive"><span>Home</span></a>
+						<a href="index.html#work" class="icon solid fa-folder-open active"><span>Works</span></a>
 						<a href="index.html#about" class="icon solid fa-address-card"><span>About</span></a>
 						<a href="index.html#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 					</nav>
@@ -82,7 +95,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <section>
+                                    <section id="progressBar">
                                         <a>
                                             <img style="width: 100%;" src="images/processGarmin.jpg" alt="" />
                                         </a>
@@ -299,6 +312,32 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+                window.onscroll = function (){scrollControl()};
+
+                //var progressBar = document.getElementById("progressBar");
+                //var sticky = progressBar.offsetTop;
+                //console.log("sticky: "+ sticky);
+
+                function scrollControl() {
+
+                    //shrinkTitle
+                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+                    {
+                        document.getElementById("nav").style.fontSize = ".5em";
+                    }
+                    else{
+                        document.getElementById("nav").style.fontSize = "1em";
+                    }
+
+                    //stickProgressBar
+                    // if (window.pageYOffset > sticky) {
+                    //     progressBar.classList.add("sticky");
+                    // }else {
+                    //     progressBar.classList.remove("sticky");
+                    // }
+                }
+            </script>
 
 	</body>
 </html>

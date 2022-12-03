@@ -55,7 +55,9 @@
 		// Initialize.
 			(function() {
 
-				var $panel, $link;
+				var $panel, $link, $url;
+				$url = window.location;
+				//console.log($url.pathname);
 
 				// Get panel, link.
 					if (window.location.hash) {
@@ -71,6 +73,12 @@
 
 						$panel = $panels.first();
 						$link = $nav_links.first();
+						if ($url.pathname != "/index.html")
+						{
+							console.log($url);
+							$panel = $panels.second();
+							$link = $nav_links.second();
+						}
 
 					}
 
