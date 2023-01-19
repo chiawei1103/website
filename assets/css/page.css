@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2176,6 +2177,32 @@ input, select, textarea {
 						}
 
 				}
+
+				#myBtn {
+					width: 70px;
+					height: 70px;
+					display: none; /* Hidden by default */
+					position: fixed; /* Fixed/sticky position */
+					bottom: 20px; /* Place the button at the bottom of the page */
+					right: 30px; /* Place the button 30px from the right */
+					z-index: 99; /* Make sure it does not overlap */
+					border: none; /* Remove borders */
+					outline: none; /* Remove outline */
+					background-color: #310A31; /* Set a background color */
+					color: white; /* Text color */
+					cursor: pointer; /* Add a mouse pointer on hover */
+					padding: 15px; /* Some padding */
+					border-radius: 50%; /* Rounded corners */
+					font-size: 50px; /* Increase font size */
+					align-items: center;
+					text-align: center;
+					transition: color .25s ease-in-out;
+				  }
+				  
+				  #myBtn:hover {
+					color: #310A31;
+					background-color: white; /* Add a dark-grey background on hover */
+				  }
 
 /* Footer */
 

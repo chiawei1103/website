@@ -75,11 +75,12 @@
 						$panel = $panels.first();
 						$link = $nav_links.first();
 						
-						if (!$url.pathname.includes("index"))
-						{
+						if (!$url.pathname.includes("index")) {
 							console.log($panels);
 							//$panel = $panels.first().next();
 							$link = $nav_links.first().next();
+						} else if (!$url.pathname.includes("#")) {
+							$link = $nav_links.first();
 						}
 
 					}
