@@ -48,3 +48,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+  # Analytics
+  analytics:
+    provider               : "google-gtag"
+    google:
+      measurement_id          : "G-KZTRY2H3P7"
+      anonymize_ip         : # true, false (default)
